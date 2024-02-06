@@ -1,3 +1,4 @@
+import { mochDate2023_7_14_15_30_0 } from "../../components/dummies";
 import { 
   ILesson, 
   IRule, 
@@ -5,7 +6,6 @@ import {
   PeriodicityType 
 } from "../../types/domain";
 import { ISubjectView } from "../../types/teacherDomainView";
-import { mochDate2023_7_14_15_30_0 } from "../../component/dummies";
 import { getPreviewLessonsFromASingleRule} from './getPreviewLessons';
 
 
