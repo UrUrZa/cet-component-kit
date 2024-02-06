@@ -1,0 +1,31 @@
+import { Button, ButtonGroup } from '@mui/material';
+import React from 'react';
+import { CommonElementProps } from '../../../common/component/types';
+
+export interface IWeekDayPikerProps extends CommonElementProps {
+  checked: number[];
+  onChange: (day: number) => void;
+}
+
+export const WeekDayPiker: React.FC<IWeekDayPikerProps> = ({checked, onChange, ...rest}) => {
+  const daysOfWeek = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+  return (
+    <ButtonGroup 
+      variant="outlined"
+      fullWidth
+    >
+      {daysOfWeek.map((day, index) => {
+        const isChecked: boolean = checked.includes(index)
+        return (
+          <Button
+            key={day}
+            onClick={() => onChange(index)}
+            variant= {isChecked ? 'contained' : 'outlined'}
+          >
+            {day}
+          </Button>
+        )})
+      }
+    </ButtonGroup>
+  );
+}
