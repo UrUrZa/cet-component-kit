@@ -1,8 +1,9 @@
-import React, { PropsWithChildren } from 'react';
+import React from 'react';
 import { Box, Paper, Typography } from '@mui/material';
 import styled from '@emotion/styled';
+import { IHaveChildren } from '../types';
 
-export interface IZoneProps extends PropsWithChildren {
+export interface IZoneProps extends IHaveChildren {
   isAcceptableDrop: boolean;
   isAcceptableNew: boolean;
 }

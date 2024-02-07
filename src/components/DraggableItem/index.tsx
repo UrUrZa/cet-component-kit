@@ -1,8 +1,8 @@
 import { UniqueIdentifier, useDndMonitor, useDraggable } from '@dnd-kit/core';
 import { CSS } from '@dnd-kit/utilities';
-import { PropsWithChildren } from 'react';
+import { IHaveChildren } from '../types';
 
-export interface IDraggableItemProps extends PropsWithChildren {
+export interface IDraggableItemProps extends IHaveChildren {
   cardId: string;
   onDragStart: (id: UniqueIdentifier) => void;
   onDragEnd: (id: UniqueIdentifier) => void;

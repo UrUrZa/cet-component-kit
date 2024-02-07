@@ -24,7 +24,7 @@ export const IconButton: React.FC<IIconButtonProps> = ({onClick, type, disabled,
     
 
     return (
-        <MUIIconButton ref = {ref} onClick={handleClick} disabled={disabled}>
+        <MUIIconButton ref = {ref} onClick={handleClick} disabled={disabled} {...rest}>
             <Component/>
         </MUIIconButton>
     );

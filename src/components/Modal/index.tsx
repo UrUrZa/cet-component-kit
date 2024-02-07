@@ -1,14 +1,14 @@
-import React, { PropsWithChildren, ReactNode } from 'react';
+import React, { ReactNode } from 'react';
 import { Global } from '@emotion/react';
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { CommonElementProps, ModalMode } from '../../../common/component/types';
+import { CommonElementProps, IHaveChildren, ModalMode } from '../types';
 
 export interface IModalProps extends CommonElementProps {}
 
-export interface IModalProps extends React.HTMLAttributes<HTMLDivElement>, PropsWithChildren {
+export interface IModalProps extends React.HTMLAttributes<HTMLDivElement>, IHaveChildren {
   comandChilden: ReactNode [];
   modalMode: ModalMode;
   onChangeModalMode: (modalMode: ModalMode) => void;

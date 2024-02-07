@@ -13,6 +13,7 @@ export const WeekDayPiker: React.FC<IWeekDayPikerProps> = ({checked, onChange, .
     <ButtonGroup 
       variant="outlined"
       fullWidth
+      {...rest}
     >
       {daysOfWeek.map((day, index) => {
         const isChecked: boolean = checked.includes(index)
