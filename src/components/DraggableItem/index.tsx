@@ -1,6 +1,7 @@
 import { UniqueIdentifier, useDndMonitor, useDraggable } from '@dnd-kit/core';
 import { CSS } from '@dnd-kit/utilities';
 import { IHaveChildren } from '../types';
+import React from 'react';
 
 export interface IDraggableItemProps extends IHaveChildren {
   cardId: string;

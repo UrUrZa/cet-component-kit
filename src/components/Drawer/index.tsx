@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import React, { ReactNode } from "react";
 import { SlideoutDirection } from "../types";
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 

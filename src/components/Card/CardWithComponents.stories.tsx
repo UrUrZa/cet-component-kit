@@ -2,6 +2,8 @@ import { Meta } from '@storybook/react';
 import { Card, ICardProps } from '.';
 import { Avatar, Box, Typography } from '@mui/material';
 import { IMenuOption, IconButtonMenu } from '../IconButtonMenu';
+import React from 'react';
+
 
 export default {
     title: 'Component/Card',

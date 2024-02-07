@@ -1,4 +1,5 @@
 import { Meta } from '@storybook/react';
+import React from 'react';
 import { CalendarToolbar, ICalendarToolbarProps } from './CalendarToolbar';
 
 export default {
