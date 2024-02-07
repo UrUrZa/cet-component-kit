@@ -1,10 +1,14 @@
+import React from 'react';
 import { Meta } from '@storybook/react';
 import { AbonementOfferSellableItem, IAbonementOfferSellableItemProps } from '.';
 import { dummySubjectViews } from '../dummies';
 
-export default {
+const meta: Meta<IAbonementOfferSellableItemProps> = {
   title: 'Component/AbonementOfferSellableItem',
-} as Meta;
+  component: AbonementOfferSellableItem,
+};
+
+export default meta;
 
 const componentDefaultProps: IAbonementOfferSellableItemProps = {
   isMostPopular: true,
