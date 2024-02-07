@@ -1,5 +1,3 @@
-import { commonState } from "../store/commonReducer";
-import { IEditingResourceState } from "../store/editingEntitySlice";
 import { 
   AbonementType, 
   IAbonementConsumable, 
@@ -13,25 +11,8 @@ import {
 } from "./domain";
 import { IAbonementConsumableView, IStudentView } from "./studentDomainView";
 import { ISubjectView, ITeacherView } from "./teacherDomainView";
-import { rootStudentState } from "../../student/store";
-import { oneDay } from "../component/dummies";
-import { 
-  AbonementLessonsFilter,
-  AbonementOfferShownTarget, 
-  AbonementPageNavigation, 
-  AdditionalDrawerShown, 
-  DetailsDrawerShown, 
-  IHaveSearchAndSearchOption, 
-  IHaveShowMore, 
-  IHaveStudentDrawers, 
-  IStoreCurrentValues, 
-  IStudentModalState, 
-  IStudentNavigation, 
-  ScheduleView, 
-  StudentNavigation, 
-  StudentProfileNavigation, 
-  StudentSearchOptions 
-} from "../../student/store/modal";
+
+import { oneDay } from "../components/dummies";
 
 export const children = [ 1, 2, 3, 4, 5 ];
 
@@ -110,59 +91,7 @@ export const makeDummieLesson = (item: any, index: number): ILesson => {
   };
 };
 
-export const dummieEditableStudent: IEditingResourceState<IStudentView> = {
-  data: makeDummieStudent({}, 0),
-  fieldsEditing: {},
-};
 
-export const dummieCommonState: commonState = {
-  loading: {},
-  error: {},
-  userProfile: {
-    id: 'UserId',
-    displayName: 'User Name',
-    email: 'User Email',
-    photoURL: 'User Photo',
-    providerId: 'User Provider',
-    phoneNumber: 'User Phone',
-    notificationsToken: 'User Token',
-  },
-};
-
-export const dummieNavigation: IStudentNavigation = {
-  studentNavigation: StudentNavigation.schedule,
-  scheduleView: ScheduleView.schedule,
-  studentProfileNavigation: StudentProfileNavigation.subjects,
-  abonementPageNavigation: AbonementPageNavigation.lessons,
-};
-export const dummieStudentDrawers: IHaveStudentDrawers = {
-  detailsDrawerShown: DetailsDrawerShown.closed,
-  additionalDrawerShown: AdditionalDrawerShown.closed,
-  abonementOffersShowcaseShown: AbonementOfferShownTarget.closed,
-};
-export const dummieShowMore: IHaveShowMore = {
-  showMore: false,
-};
-export const dummieSearchState: IHaveSearchAndSearchOption = {
-  search: '',
-  searchOption: StudentSearchOptions.all,
-};
-export const dummieStoreValues: IStoreCurrentValues = {
-  currentDate: new Date(),
-  currentSubjectId: 'SubjectId',
-  currentOwnAbonementId: 'AbonementId',
-  currentAbonementOfferIndex: 0,
-  currentAbonementLessonsFilter: AbonementLessonsFilter.all,
-  currentAbonementOffersIds: [],
-};
-
-export const dummieModalState: IStudentModalState = {
-  ...dummieNavigation,
-  ...dummieStudentDrawers,
-  ...dummieShowMore,
-  ...dummieSearchState,
-  ...dummieStoreValues,
-};
 
 export const makeDummieAbonementConsumable = (item: any, index: number): IAbonementConsumable => {
   const abonementOfferView = makeDummieAbonementConsumableView(item, index);
@@ -204,22 +133,3 @@ export const makeDummieTeacher = (item: any, index: number): ITeacher => {
   };
 };
 
-export const dummieState: rootStudentState = {
-  ...dummieCommonState,
-  modal: dummieModalState,
-  studentDomain: makeDummieStudent({}, 0),
-  externalLessons: {
-    data: children.map(makeDummieLesson),
-    filters: {},
-  },
-  externalSubjects: {
-    data: children.map(makeDummieSubjectView),
-    filters: {},
-  },
-  externalTeachers: {
-    data: children.map(makeDummieTeacherView),
-    filters: {},
-  },
-  editableStudent: dummieEditableStudent,
-  externalTeacher: makeDummieTeacherView({}, 0),
-};

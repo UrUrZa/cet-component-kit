@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Meta } from '@storybook/react';
 import { ChipsSelect, ISelectOption, IChipsSelectProps } from '.';
-import { toggleStringArrayValue } from '../../commands/toggleArrayValue';
+import { toggleStringArrayValue } from '../../utilities/toggleArrayValue';
 
 export default {
     title: 'Component/ChipsSelect',
