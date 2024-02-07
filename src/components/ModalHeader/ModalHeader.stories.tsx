@@ -1,5 +1,6 @@
 import { Meta } from "@storybook/react";
 import { IModalHeaderProps, ModalHeader } from ".";
+import React from 'react';
 
 export default {
   title: 'Component/ModalHeader',

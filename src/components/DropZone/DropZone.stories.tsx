@@ -3,6 +3,8 @@ import { DropZone, IDropZoneProps } from '.';
 import { DndContext } from '@dnd-kit/core';
 import { Box } from '@mui/material';
 import { DraggableItem } from '../DraggableItem';
+import React from 'react';
+
 export default {
     title: 'Component/DropZone',
 } as Meta;

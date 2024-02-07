@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Meta } from '@storybook/react';
 import { SearchField, ISearchFieldProps } from '.';
+import React from 'react';
+
 
 export default {
     title: 'Component/SearchField',
