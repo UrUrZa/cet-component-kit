@@ -1,7 +1,7 @@
 import { Box, IconButton, Menu, MenuItem } from '@mui/material';
 import React from 'react';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
-import { CommonElementProps } from '../../../common/component/types';
+import { CommonElementProps } from '../types';
 import FilterListIcon from '@mui/icons-material/FilterList';
 
 export interface IIconButtonMenuProps extends CommonElementProps {

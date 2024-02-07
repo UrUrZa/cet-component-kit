@@ -3,9 +3,9 @@ import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import { IHaveId, id } from '../../../common/types/domain';
+import { IHaveId, id } from "../../types/domain";
 import { Box, Typography } from '@mui/material';
-import { CommonElementProps } from '../../../common/component/types';
+import { CommonElementProps } from '../types';
 
 export interface IDropDownMenuProps extends CommonElementProps {
   title: string;

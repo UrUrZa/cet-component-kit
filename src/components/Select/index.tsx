@@ -1,6 +1,6 @@
 import React from 'react';
 import { ISelectOption } from '../ChipsSelect';
-import { id } from '../../../common/types/domain';
+import { id } from "../../types/domain";
 import {
   Box,
   FormControl,
@@ -9,7 +9,7 @@ import {
   SelectChangeEvent,
   BoxProps,
 } from '@mui/material';
-import { CommonElementProps } from '../../../common/component/types';
+import { CommonElementProps } from '../types';
 
 
 export type ISelectOptionsFromBox = Pick<BoxProps, 'marginTop' | 'marginBottom'>;

@@ -1,6 +1,6 @@
 import { Avatar as AvatarMUI, AvatarProps } from '@mui/material';
 import React from 'react';
-import { CommonElementProps } from '../../../common/component/types';
+import { CommonElementProps } from '../types';
 
 export interface IAvatarProps extends CommonElementProps, AvatarProps {
     image: string;

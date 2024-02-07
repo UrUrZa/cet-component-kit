@@ -1,7 +1,7 @@
 import { Box, Card as MuiCard } from '@mui/material';
 import React from 'react';
 import styled from '@emotion/styled';
-import { CommonElementProps } from '../../../common/component/types';
+import { CommonElementProps } from '../types';
 
 export interface ICardProps extends CommonElementProps {
   children: (React.ReactNode | undefined)[];

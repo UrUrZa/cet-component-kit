@@ -1,6 +1,6 @@
 import { Button, ButtonGroup } from '@mui/material';
 import React from 'react';
-import { CommonElementProps } from '../../../common/component/types';
+import { CommonElementProps } from '../types';
 
 export interface IWeekDayPikerProps extends CommonElementProps {
   checked: number[];

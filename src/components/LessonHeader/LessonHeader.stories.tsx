@@ -1,7 +1,7 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
 import { LessonHeader, ILessonHeaderProps } from '.';
-import { LessonStatus } from '../../../common/types/domain';
+import { LessonStatus } from "../../types/domain";
 
 export default {
     title: 'Component/LessonHeader',

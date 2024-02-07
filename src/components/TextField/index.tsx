@@ -1,6 +1,6 @@
 import { Box, TextField as MuiTextField, styled  } from '@mui/material';
 import React from 'react';
-import { CommonElementProps } from '../../../common/component/types';
+import { CommonElementProps } from '../types';
 
 export interface ITextFieldProps extends CommonElementProps {
   text: string

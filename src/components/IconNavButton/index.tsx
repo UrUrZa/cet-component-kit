@@ -12,7 +12,7 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import Avatar from '@mui/material/Avatar';
 import { Box, IconButton, Typography } from '@mui/material';
 import styled from '@emotion/styled';
-import { CommonElementProps } from '../../../common/component/types';
+import { CommonElementProps } from '../types';
 import SearchIcon from '@mui/icons-material/Search';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';

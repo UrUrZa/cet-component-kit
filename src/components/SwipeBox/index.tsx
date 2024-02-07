@@ -1,7 +1,7 @@
 import { Box, BoxProps } from '@mui/material';
 import React, { useState, MouseEvent } from 'react';
 import { useSwipeable } from 'react-swipeable';
-import { CommonElementProps } from '../../../common/component/types';
+import { CommonElementProps } from '../types';
 
 interface MousePosition {
   x: number;

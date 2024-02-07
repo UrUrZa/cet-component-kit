@@ -1,6 +1,6 @@
-import { LessonStatus } from "../../../common/types/domain";
 import { format, formatDistanceStrict } from 'date-fns';
 import { formatDateDistance } from "./lessonDateDistanse";
+import { LessonStatus } from '../../types/domain';
 
 
 export const getText = (status: LessonStatus, date: Date) => {

@@ -2,14 +2,14 @@ import Alert from '@mui/material/Alert';
 import Card from '@mui/material/Card/Card';
 import Typography from '@mui/material/Typography';
 import React from 'react';
-import { LessonStatus } from '../../../common/types/domain';
 import { IconLesson } from './IconLesson';
 import { IMenuOption, IconButtonMenu } from '../IconButtonMenu';
 import { getText } from './lessonHeaderText';
 import { getCollor } from './lessonHeaderCollor';
-import { CommonElementProps } from '../../../common/component/types';
+import { CommonElementProps } from '../types';
 import { headerHeight } from '../Header';
 import styled from '@emotion/styled';
+import { LessonStatus } from '../../types/domain';
 
 
 export interface ILessonHeaderProps extends CommonElementProps {

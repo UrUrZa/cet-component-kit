@@ -4,7 +4,7 @@ import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { MobileDateTimePicker, MobileTimePicker } from '@mui/x-date-pickers';
 import { Box } from '@mui/material';
-import { CommonElementProps } from '../../../common/component/types';
+import { CommonElementProps } from '../types';
 
 export interface IDatePikerProps extends CommonElementProps {
   type: DataPikerType;

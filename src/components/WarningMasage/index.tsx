@@ -1,7 +1,7 @@
 import { Alert, Typography } from '@mui/material';
 import React from 'react';
 import ReportProblemIcon from '@mui/icons-material/ReportProblem';
-import { CommonElementProps } from '../../../common/component/types';
+import { CommonElementProps } from '../types';
 
 export interface IWarningMasageProps extends CommonElementProps {
     mesage: string;

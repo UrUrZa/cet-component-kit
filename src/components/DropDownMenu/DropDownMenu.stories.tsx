@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Meta } from '@storybook/react';
 import { DropDownMenu, IDropDownMenuProps, IOption } from '.';
-import { id } from '../../../common/types/domain';
+import { id } from "../../types/domain";
 
 export default {
     title: 'Component/DropDownMenu',

@@ -1,6 +1,6 @@
 import React from 'react';
 import { InputAdornment, TextField as MuiTextField  } from '@mui/material';
-import { CommonElementProps } from '../../../common/component/types';
+import { CommonElementProps } from '../types';
 
 
 export interface INumberFieldProps extends CommonElementProps {

@@ -4,12 +4,12 @@ import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import interactionPlugin from '@fullcalendar/interaction';
 import listPlugin from '@fullcalendar/list';
-import { ILesson, LessonStatus, LessonsPreviewSource, id } from '../../../common/types/domain';
+import { ILesson, LessonStatus, LessonsPreviewSource, id } from "../../types/domain";
 import { Box } from '@mui/material';
 import { EventClickArg } from '@fullcalendar/core';
 import { WarningMasage } from '../WarningMasage';
 import { lessonToCalendarEventMap } from './lessonToCalendarEventMap';
-import { CommonElementProps } from '../../../common/component/types';
+import { CommonElementProps } from '../types';
 import { CalendarToolbar } from './CalendarToolbar';
 import { slotMaxTime, slotMinTime } from './timeSlots';
 

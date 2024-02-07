@@ -6,8 +6,8 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import Chip from '@mui/material/Chip';
-import { id } from '../../../common/types/domain';
-import { CommonElementProps } from '../../../common/component/types';
+import { id } from "../../types/domain";
+import { CommonElementProps } from '../types';
 
 export interface IChipsSelectProps extends CommonElementProps {
     options: ISelectOption[];

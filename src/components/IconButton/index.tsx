@@ -1,7 +1,7 @@
 import { IconButton as MUIIconButton } from '@mui/material';
 import React from 'react';
 import { ButtonType, IconVariant } from '../IconNavButton';
-import { CommonElementProps } from '../../../common/component/types';
+import { CommonElementProps } from '../types';
 
 export interface IIconButtonProps extends CommonElementProps {
     type: ButtonType

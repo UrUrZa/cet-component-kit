@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box } from '@mui/material';
-import { CommonElementProps } from '../../../common/component/types';
+import { CommonElementProps } from '../types';
 import { useClickOutside } from './ClickOutsideHook';
 
 export interface IClickOutsideHandlerProps extends CommonElementProps {

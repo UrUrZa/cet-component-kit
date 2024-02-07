@@ -1,11 +1,11 @@
 import React from 'react';
-import { LessonStatus } from '../../../common/types/domain';
 import EventAvailableIcon from '@mui/icons-material/EventAvailable';
 import UpdateIcon from '@mui/icons-material/Update';
 import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
 import SportsScoreIcon from '@mui/icons-material/SportsScore';
 import DoneIcon from '@mui/icons-material/Done';
 import CloseIcon from '@mui/icons-material/Close';
+import { LessonStatus } from '../../types/domain';
 
 export const IconLesson: React.FC <{status: LessonStatus}> = ({status}) => {
   switch(status){

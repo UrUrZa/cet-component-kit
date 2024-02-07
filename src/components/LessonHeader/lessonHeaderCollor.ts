@@ -1,4 +1,4 @@
-import { LessonStatus } from "../../../common/types/domain";
+import { LessonStatus } from "../../types/domain";
 
 export const getCollor = (status: LessonStatus) => {
   if (status === LessonStatus.canceled) {
