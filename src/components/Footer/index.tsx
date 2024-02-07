@@ -1,9 +1,8 @@
 import styled from '@emotion/styled';
 import { Card } from '@mui/material';
-import React, { PropsWithChildren } from 'react';
-import { CommonElementProps } from '../../../common/component/types';
-
-export interface IFooterProps extends CommonElementProps, PropsWithChildren {}
+import { CommonElementProps, IHaveChildren } from '../types';
+import React from 'react';
+export interface IFooterProps extends CommonElementProps, IHaveChildren {}
 
 export const footerHeight = 76;
 

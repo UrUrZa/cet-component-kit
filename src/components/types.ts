@@ -3,6 +3,10 @@ export type CommonElementProps = Pick<
   "className" | "style" | "children"
 >;
 
+export interface IHaveChildren {
+  children?: React.ReactNode;
+};
+
 export enum ModalMode {
   closed = 'closed',
   fillHeight = 'fillHeight',

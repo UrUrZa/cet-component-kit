@@ -1,9 +1,9 @@
 import styled from '@emotion/styled';
 import { Card } from '@mui/material';
-import React, { PropsWithChildren } from 'react';
-import { CommonElementProps } from '../../../common/component/types';
+import React from 'react';
+import { CommonElementProps, IHaveChildren } from '../types';
 
-export interface IHeaderProps extends CommonElementProps, PropsWithChildren {
+export interface IHeaderProps extends CommonElementProps, IHaveChildren {
 }
 
 export const headerHeight = 60;
