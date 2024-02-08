@@ -10,9 +10,12 @@ import { textL } from '../dummies';
 import { PeriodicityType } from '../../types/domain';
 import { ModalMode } from '../types';
 
-export default {
+const meta: Meta<IModalProps> = {
   title: 'Component/Modal',
-} as Meta;
+  component: Modal,
+};
+
+export default meta;
 
 const componentDefaultProps: IModalProps = {
   modalMode: ModalMode.fillHeight,

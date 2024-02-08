@@ -1,10 +1,12 @@
-import React from 'react';
 import { Meta } from '@storybook/react';
 import { activeAvatarStyle, AppAvatar, IconNavButton, IIconNavButtonProps, ButtonType } from '.';
 
-export default {
+const meta: Meta<IIconNavButtonProps> = {
     title: 'Component/IconNavButton',
-} as Meta;
+    component: IconNavButton,
+};
+
+export default meta;
 
 const componentDefaultProps: IIconNavButtonProps = {
     isActive: false,

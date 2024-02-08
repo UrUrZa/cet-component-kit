@@ -1,12 +1,13 @@
 import { useState } from 'react';
 import { Meta } from '@storybook/react';
 import { SearchField, ISearchFieldProps } from '.';
-import React from 'react';
 
-
-export default {
+const meta: Meta<ISearchFieldProps> = {
     title: 'Component/SearchField',
-} as Meta;
+    component: SearchField,
+};
+
+export default meta;
 
 const componentDefaultProps: ISearchFieldProps = {
     onChangeSearch: () => console.log('change'),

@@ -3,11 +3,13 @@ import { DropZone, IDropZoneProps } from '.';
 import { DndContext } from '@dnd-kit/core';
 import { Box } from '@mui/material';
 import { DraggableItem } from '../DraggableItem';
-import React from 'react';
 
-export default {
+const meta: Meta<IDropZoneProps> = {
     title: 'Component/DropZone',
-} as Meta;
+    component: DropZone,
+};
+
+export default meta;
 
 const componentDefaultProps: IDropZoneProps = {
     onAcceptDrop: (id) => console.log(`DropZone onAcceptDrop: ${id}`),

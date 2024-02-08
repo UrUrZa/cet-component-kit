@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Meta } from '@storybook/react';
 import { TextField, ITextFieldProps, TextFieldType } from '.';
 import { Box } from '@mui/material';
 
-export default {
+const meta: Meta<ITextFieldProps> = {
     title: 'Component/TextField',
-} as Meta;
+    component: TextField,
+};
+
+export default meta;
 
 const componentDefaultProps: ITextFieldProps = {
     text:'Example text',

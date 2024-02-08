@@ -1,10 +1,12 @@
-import React from 'react';
 import { Meta } from '@storybook/react';
 import { ActionButton, IActionButtonProps } from '.';
 
-export default {
+const meta: Meta<IActionButtonProps> = {
     title: 'Component/ActionButton',
-} as Meta;
+    component: ActionButton,
+};
+
+export default meta;
 
 const componentDefaultProps: IActionButtonProps = {
     onClick: () => console.log("Add Item")

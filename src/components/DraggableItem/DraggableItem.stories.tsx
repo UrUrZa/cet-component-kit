@@ -1,4 +1,3 @@
-import React from 'react';
 import { Meta } from '@storybook/react';
 import { DraggableItem, IDraggableItemProps } from '.';
 import { Box } from '@mui/material';
@@ -6,10 +5,12 @@ import { DndContext, UniqueIdentifier } from '@dnd-kit/core';
 import { DropZone } from '../DropZone';
 import styled from '@emotion/styled';
 
+const meta: Meta<IDraggableItemProps> = {
+  title: 'Component/DraggableItem',
+  component: DraggableItem,
+};
 
-export default {
-  title: 'Component/DraggableRectangle',
-} as Meta;
+export default meta;
 
 const componentDefaultProps: IDraggableItemProps = {
   onDragStart: (id: UniqueIdentifier) => console.log(`DraggableRectangle onDragStart: ${id}`),

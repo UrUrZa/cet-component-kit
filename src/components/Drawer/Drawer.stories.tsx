@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Meta } from '@storybook/react';
 import { Drawer, IDrawerProps } from '.';
 import { SlideoutDirection } from '../types';
 import { Box, Button } from '@mui/material';
-import { ex } from '@fullcalendar/core/internal-common';
 
-export default {
-    title: 'Component/Drawer',
-} as Meta;
+const meta: Meta<IDrawerProps> = {
+  title: 'Component/Drawer',
+  component: Drawer,
+};
+
+export default meta;
 
 const componentDefaultProps: IDrawerProps = {
   isOpen: true,

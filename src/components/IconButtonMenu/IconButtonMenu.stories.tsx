@@ -1,11 +1,13 @@
-import React from 'react';
 import { Meta } from '@storybook/react';
 import { IconButtonMenu, IIconButtonMenuProps } from '.';
 import { Box } from '@mui/material';
 
-export default {
+const meta: Meta<IIconButtonMenuProps> = {
     title: 'Component/IconButtonMenu',
-} as Meta;
+    component: IconButtonMenu,
+};
+
+export default meta;
 
 const componentDefaultProps: IIconButtonMenuProps = {
     options: [

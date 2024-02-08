@@ -1,11 +1,13 @@
-import React from 'react';
 import { Meta } from '@storybook/react';
 import { SwipeBox, ISwipeBoxProps } from '.';
 import { Box } from '@mui/system';
 
-export default {
+const meta: Meta<ISwipeBoxProps> = {
     title: 'Component/SwipeBox',
-} as Meta;
+    component: SwipeBox,
+};
+
+export default meta;
 
 const componentDefaultProps: ISwipeBoxProps = {
     onSwipeRight: () => console.log('onSwipeRight'),

@@ -3,12 +3,14 @@ import { Header, IHeaderProps } from '.';
 import { DropDownMenu } from '../DropDownMenu';
 import { IconButton } from '../IconButton';
 import { ButtonType } from '../IconNavButton';
-import React from 'react';
 
 
-export default {
+const meta: Meta<IHeaderProps> = {
     title: 'Component/Header',
-} as Meta;
+    component: Header,
+};
+
+export default meta;
 
 const componentDefaultProps: IHeaderProps = {}
 

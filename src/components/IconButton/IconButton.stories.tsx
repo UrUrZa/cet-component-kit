@@ -1,11 +1,13 @@
-import React from 'react';
 import { Meta } from '@storybook/react';
 import {IconButton, IIconButtonProps} from '.';
 import { ButtonType } from '../IconNavButton';
 
-export default {
+const meta: Meta<IIconButtonProps> = {
     title: 'Component/IconButton',
-} as Meta;
+    component: IconButton,
+};
+
+export default meta;
 
 const componentDefaultProps: IIconButtonProps = {
  type:ButtonType.confirm,

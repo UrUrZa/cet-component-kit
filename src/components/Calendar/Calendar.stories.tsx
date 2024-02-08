@@ -7,9 +7,12 @@ import {
   } from 'date-fns';
 import { dummieExternalLessons } from '../dummies';
 
-export default {
+const meta: Meta<ICalendarProps> = {
     title: 'Component/Calendar',
-} as Meta;
+    component: Calendar,
+};
+
+export default meta;
 
 const componentDefaultProps: ICalendarProps = {
     lessons: [],

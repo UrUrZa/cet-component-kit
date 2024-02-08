@@ -1,10 +1,12 @@
-import React from 'react';
 import { Meta } from '@storybook/react';
 import { NumberField, INumberFieldProps } from '.';
 
-export default {
+const meta: Meta<INumberFieldProps> = {
     title: 'Component/NumberField',
-} as Meta;
+    component: NumberField,
+};
+
+export default meta;
 
 const componentDefaultProps: INumberFieldProps = {
     // value: 0,

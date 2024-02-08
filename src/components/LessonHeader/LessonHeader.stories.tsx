@@ -1,11 +1,13 @@
-import React from 'react';
 import { Meta } from '@storybook/react';
 import { LessonHeader, ILessonHeaderProps } from '.';
 import { LessonStatus } from "../../types/domain";
 
-export default {
+const meta: Meta<ILessonHeaderProps> = {
     title: 'Component/LessonHeader',
-} as Meta;
+    component: LessonHeader,
+};
+
+export default meta;
 
 const componentDefaultProps: ILessonHeaderProps = {
     title: 'Taratata Yoga',

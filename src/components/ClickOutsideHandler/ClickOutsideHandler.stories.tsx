@@ -8,11 +8,12 @@ import { TextField, TextFieldType } from '../TextField';
 import { Box, Typography } from '@mui/material';
 import React from 'react';
 
-
-
-export default {
+const meta: Meta<IClickOutsideHandlerProps> = {
   title: 'Component/ClickOutsideHandler',
-} as Meta;
+  component: ClickOutsideHandler,
+};
+
+export default meta;
 
 const componentDefaultProps: IClickOutsideHandlerProps = {
   onClickOutside: () => {console.log('onClickOutside')},
@@ -20,9 +21,7 @@ const componentDefaultProps: IClickOutsideHandlerProps = {
 }
 
 export const ClickOutsideHandlerStory = () => {
-  const componentProps: IClickOutsideHandlerProps = {
-    ...componentDefaultProps,
-  }
+
 
   const [name, setName] = useState('');
   const [isNameEditing, toggleNameEditing] = useState(true);
@@ -45,9 +44,14 @@ export const ClickOutsideHandlerStory = () => {
     }
   };
 
+  const componentProps: IClickOutsideHandlerProps = {
+    ...componentDefaultProps,
+    onClickOutside: endEditingNameHandler,
+  }
+
   return (
     <>
-      <ClickOutsideHandler onClickOutside={endEditingNameHandler}>
+      <ClickOutsideHandler {...componentProps}>
       <Header>
         <IconButton 
           type={ButtonType.cancel} 

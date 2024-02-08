@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { WeekDayPiker, IWeekDayPikerProps } from '.';
 import { Meta } from '@storybook/react';
 import { toggleArrayValue } from '../../utilities/toggleArrayValue';
 
-export default {
+const meta: Meta<IWeekDayPikerProps> = {
     title: 'Component/WeekDayPiker',
-} as Meta;
+    component: WeekDayPiker,
+};
+
+export default meta;
 
 const componentDefaultProps: IWeekDayPikerProps = {
     checked: [],

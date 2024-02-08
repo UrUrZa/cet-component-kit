@@ -2,12 +2,13 @@ import { Meta } from '@storybook/react';
 import { Card, ICardProps } from '.';
 import { Avatar, Box, Typography } from '@mui/material';
 import { IMenuOption, IconButtonMenu } from '../IconButtonMenu';
-import React from 'react';
 
-
-export default {
+const meta: Meta<ICardProps> = {
     title: 'Component/Card',
-} as Meta;
+    component: Card,
+};
+
+export default meta;
 
 const componentDefaultProps: ICardProps = {
     children: [],

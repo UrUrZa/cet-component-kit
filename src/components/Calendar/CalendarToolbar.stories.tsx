@@ -1,10 +1,12 @@
 import { Meta } from '@storybook/react';
-import React from 'react';
 import { CalendarToolbar, ICalendarToolbarProps } from './CalendarToolbar';
 
-export default {
-    title: 'Component/Actions',
-} as Meta;
+const meta: Meta<ICalendarToolbarProps> = {
+    title: 'Component/CalendarToolbar',
+    component: CalendarToolbar,
+};
+
+export default meta;
 
 const componentDefaultProps: ICalendarToolbarProps = {
     startDate: new Date("2021-10-01T00:00:00.000Z"),

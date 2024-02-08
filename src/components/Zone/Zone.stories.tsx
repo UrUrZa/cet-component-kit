@@ -1,11 +1,13 @@
-import React from 'react';
 import { Meta } from '@storybook/react';
 import { Zone, IZoneProps } from '.';
 import { Rectangle } from '../Rectangle';
 
-export default {
+const meta: Meta<IZoneProps> = {
     title: 'Component/Zone',
-} as Meta;
+    component: Zone,
+};
+
+export default meta;
 
 const componentDefaultProps: IZoneProps = {
     isAcceptableDrop: false,

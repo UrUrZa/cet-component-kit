@@ -1,10 +1,12 @@
-import React from 'react';
 import { Meta } from '@storybook/react';
 import { TextButton, ITextButtonProps } from '.';
 
-export default {
+const meta: Meta<ITextButtonProps> = {
     title: 'Component/TextButton',
-} as Meta;
+    component: TextButton,
+};
+
+export default meta;
 
 const componentDefaultProps: ITextButtonProps = {
     title: 'Some title',

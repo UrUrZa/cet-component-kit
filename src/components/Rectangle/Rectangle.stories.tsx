@@ -1,13 +1,14 @@
-import React from 'react';
 import { Meta } from '@storybook/react';
 import { Rectangle, IRectangleProps } from '.';
 import { Box } from '@mui/material';
 import { Zone } from '../Zone';
 
-
-export default {
+const meta: Meta<IRectangleProps> = {
     title: 'Component/Rectangle',
-} as Meta;
+    component: Rectangle,
+};
+
+export default meta;
 
 const componentDefaultProps: IRectangleProps = {
     title: "Rectangle",

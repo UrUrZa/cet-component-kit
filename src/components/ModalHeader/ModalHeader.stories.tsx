@@ -1,10 +1,12 @@
 import { Meta } from "@storybook/react";
 import { IModalHeaderProps, ModalHeader } from ".";
-import React from 'react';
 
-export default {
-  title: 'Component/ModalHeader',
-} as Meta;
+const meta: Meta<IModalHeaderProps> = {
+  title: "Component/ModalHeader",
+  component: ModalHeader,
+};
+
+export default meta;
 
 const componentDefaultProps: IModalHeaderProps = {
   title: 'test',

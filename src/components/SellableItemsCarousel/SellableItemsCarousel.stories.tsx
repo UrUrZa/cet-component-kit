@@ -6,9 +6,12 @@ import { children, makeDummieAbonementOffer, makeDummieSubjectView } from '../..
 import { AbonementOfferSellableItem } from '../AbonementOfferSellableItem';
 import { AbonementType } from '../../types/domain';
 
-export default {
+const meta: Meta<ISellableItemsCarouselProps> = {
     title: 'Component/SellableItemsCarousel',
-} as Meta;
+    component: SellableItemsCarousel,
+};
+
+export default meta;
 
 const componentDefaultProps: ISellableItemsCarouselProps = {
     currentItemIndex: 1,

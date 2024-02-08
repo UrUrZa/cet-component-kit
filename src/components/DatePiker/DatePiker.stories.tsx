@@ -2,9 +2,12 @@ import React from 'react';
 import { Meta } from '@storybook/react';
 import { DataPikerType, DatePiker, IDatePikerProps } from '.';
 
-export default {
+const meta: Meta<IDatePikerProps> = {
     title: 'Component/DatePiker',
-} as Meta;
+    component: DatePiker,
+};
+
+export default meta;
 
 const componentDefaultProps: IDatePikerProps = {
     type: DataPikerType.DateTime,

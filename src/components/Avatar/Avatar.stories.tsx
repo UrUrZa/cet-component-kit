@@ -1,10 +1,12 @@
-import React from 'react';
 import { Meta } from '@storybook/react';
 import { Avatar, IAvatarProps } from '.';
 
-export default {
+const meta: Meta<IAvatarProps> = {
     title: 'Component/Avatar',
-} as Meta;
+    component: Avatar,
+};
+
+export default meta;
 
 const componentDefaultProps: IAvatarProps = {
     image:'',

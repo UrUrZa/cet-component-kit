@@ -1,10 +1,12 @@
-import React from 'react';
 import { Meta } from '@storybook/react';
 import { WarningMasage, IWarningMasageProps } from '.';
 
-export default {
+const meta: Meta<IWarningMasageProps> = {
     title: 'Component/WarningMasage',
-} as Meta;
+    component: WarningMasage,
+};
+
+export default meta;
 
 const componentDefaultProps: IWarningMasageProps = {
     mesage:'Friday 15:30 conflicting event'

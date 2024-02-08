@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Meta } from '@storybook/react';
 import { DropDownMenu, IDropDownMenuProps, IOption } from '.';
 import { id } from "../../types/domain";
 
-export default {
+const meta: Meta<IDropDownMenuProps> = {
     title: 'Component/DropDownMenu',
-} as Meta;
+    component: DropDownMenu,
+};
+
+export default meta;
 
 const exampleOptions: IOption[] =[
     {

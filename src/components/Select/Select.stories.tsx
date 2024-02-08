@@ -3,9 +3,12 @@ import { Meta } from '@storybook/react';
 import { Select, ISelectProps } from '.';
 import { id } from "../../types/domain";
 
-export default {
+const meta: Meta<ISelectProps> = {
     title: 'Component/Select',
-} as Meta;
+    component: Select,
+};
+
+export default meta;
 
 const componentDefaultProps: ISelectProps = {
     selected: '',
