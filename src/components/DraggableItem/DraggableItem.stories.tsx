@@ -4,6 +4,7 @@ import { Box } from '@mui/material';
 import { DndContext, UniqueIdentifier } from '@dnd-kit/core';
 import { DropZone } from '../DropZone';
 import styled from '@emotion/styled';
+import React from 'react';
 
 const meta: Meta<IDraggableItemProps> = {
   title: 'Component/DraggableItem',

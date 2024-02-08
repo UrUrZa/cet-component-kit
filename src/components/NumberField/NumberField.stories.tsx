@@ -1,5 +1,6 @@
 import { Meta } from '@storybook/react';
 import { NumberField, INumberFieldProps } from '.';
+import React from 'react';
 
 const meta: Meta<INumberFieldProps> = {
     title: 'Component/NumberField',

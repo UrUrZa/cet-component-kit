@@ -1,5 +1,6 @@
 import { Meta } from '@storybook/react';
 import { Avatar, IAvatarProps } from '.';
+import React from 'react';
 
 const meta: Meta<IAvatarProps> = {
     title: 'Component/Avatar',

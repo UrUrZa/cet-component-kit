@@ -1,6 +1,7 @@
 import { Meta } from '@storybook/react';
 import { Zone, IZoneProps } from '.';
 import { Rectangle } from '../Rectangle';
+import React from 'react';
 
 const meta: Meta<IZoneProps> = {
     title: 'Component/Zone',

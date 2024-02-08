@@ -1,6 +1,7 @@
 import { Meta } from '@storybook/react';
 import { LessonHeader, ILessonHeaderProps } from '.';
 import { LessonStatus } from "../../types/domain";
+import React from 'react';
 
 const meta: Meta<ILessonHeaderProps> = {
     title: 'Component/LessonHeader',

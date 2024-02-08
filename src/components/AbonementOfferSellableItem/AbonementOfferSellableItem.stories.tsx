@@ -1,6 +1,7 @@
 import { Meta } from '@storybook/react';
 import { AbonementOfferSellableItem, IAbonementOfferSellableItemProps } from '.';
 import { dummySubjectViews } from '../dummies';
+import React from 'react';
 
 const meta: Meta<IAbonementOfferSellableItemProps> = {
   title: 'Component/AbonementOfferSellableItem',

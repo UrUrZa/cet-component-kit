@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { WeekDayPiker, IWeekDayPikerProps } from '.';
 import { Meta } from '@storybook/react';
 import { toggleArrayValue } from '../../utilities/toggleArrayValue';
+import React from 'react';
 
 const meta: Meta<IWeekDayPikerProps> = {
     title: 'Component/WeekDayPiker',

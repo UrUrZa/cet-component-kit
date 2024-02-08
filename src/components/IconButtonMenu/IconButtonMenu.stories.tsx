@@ -1,6 +1,7 @@
 import { Meta } from '@storybook/react';
 import { IconButtonMenu, IIconButtonMenuProps } from '.';
 import { Box } from '@mui/material';
+import React from 'react';
 
 const meta: Meta<IIconButtonMenuProps> = {
     title: 'Component/IconButtonMenu',

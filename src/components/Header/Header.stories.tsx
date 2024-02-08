@@ -1,8 +1,9 @@
 import { Meta } from '@storybook/react';
-import { Header, IHeaderProps } from '.';
+import Header, { IHeaderProps } from '.';
 import { DropDownMenu } from '../DropDownMenu';
 import { IconButton } from '../IconButton';
 import { ButtonType } from '../IconNavButton';
+import React from 'react';
 
 
 const meta: Meta<IHeaderProps> = {

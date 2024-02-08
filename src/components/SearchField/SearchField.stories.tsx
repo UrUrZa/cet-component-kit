@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Meta } from '@storybook/react';
 import { SearchField, ISearchFieldProps } from '.';
+import React from 'react';
 
 const meta: Meta<ISearchFieldProps> = {
     title: 'Component/SearchField',

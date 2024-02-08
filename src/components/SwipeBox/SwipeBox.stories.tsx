@@ -1,6 +1,7 @@
 import { Meta } from '@storybook/react';
 import { SwipeBox, ISwipeBoxProps } from '.';
 import { Box } from '@mui/system';
+import React from 'react';
 
 const meta: Meta<ISwipeBoxProps> = {
     title: 'Component/SwipeBox',

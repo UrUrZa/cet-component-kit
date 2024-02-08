@@ -1,5 +1,6 @@
 import { Meta } from '@storybook/react';
 import { TextButton, ITextButtonProps } from '.';
+import React from 'react';
 
 const meta: Meta<ITextButtonProps> = {
     title: 'Component/TextButton',

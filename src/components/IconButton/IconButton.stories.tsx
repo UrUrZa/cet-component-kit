@@ -1,6 +1,7 @@
 import { Meta } from '@storybook/react';
 import {IconButton, IIconButtonProps} from '.';
 import { ButtonType } from '../IconNavButton';
+import React from 'react';
 
 const meta: Meta<IIconButtonProps> = {
     title: 'Component/IconButton',

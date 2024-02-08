@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { ClickOutsideHandler, IClickOutsideHandlerProps } from '.';
 import { Meta } from '@storybook/react';
-import { Header } from '../Header';
+import  Header  from '../Header';
 import { IconButton } from '../IconButton';
 import { ButtonType } from '../IconNavButton';
 import { TextField, TextFieldType } from '../TextField';
