@@ -1,13 +1,11 @@
-var React = require('react');
-
 var styles = {"test":"_3ybTi"};
 
 var ExampleComponent = function ExampleComponent(_ref) {
   var text = _ref.text;
-  return React.createElement("div", {
+  return react("div", {
     className: styles.test
   }, "Example Component: ", text);
 };
 
-exports.ExampleComponent = ExampleComponent;
+module.exports = ExampleComponent;
 //# sourceMappingURL=index.js.map

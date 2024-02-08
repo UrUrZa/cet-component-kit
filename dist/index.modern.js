@@ -1,13 +1,11 @@
-import { createElement } from 'react';
-
 var styles = {"test":"_3ybTi"};
 
 var ExampleComponent = function ExampleComponent(_ref) {
   var text = _ref.text;
-  return createElement("div", {
+  return react("div", {
     className: styles.test
   }, "Example Component: ", text);
 };
 
-export { ExampleComponent };
+export default ExampleComponent;
 //# sourceMappingURL=index.modern.js.map

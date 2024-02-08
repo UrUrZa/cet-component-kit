@@ -1,5 +1,6 @@
-import React, { PropsWithChildren } from 'react';
-export interface IZoneProps extends PropsWithChildren {
+import React from 'react';
+import { IHaveChildren } from '../types';
+export interface IZoneProps extends IHaveChildren {
     isAcceptableDrop: boolean;
     isAcceptableNew: boolean;
 }

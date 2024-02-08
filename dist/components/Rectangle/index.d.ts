@@ -1,9 +1,11 @@
-import React, { PropsWithChildren } from 'react';
-export interface IRectangleProps extends PropsWithChildren {
+import React from 'react';
+import { IHaveChildren } from '../types';
+import { id } from '../../types/domain';
+export interface IRectangleProps extends IHaveChildren {
     cardId: string;
     title: string;
     color: string;
-    onClear?: () => void;
-    onDrillDownClick?: () => void;
+    onClear?: (id: id) => void;
+    onDrillDownClick?: (id: id) => void;
 }
 export declare const Rectangle: React.FC<IRectangleProps>;

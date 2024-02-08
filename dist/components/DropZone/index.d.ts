@@ -1,6 +1,7 @@
-import React, { PropsWithChildren } from 'react';
+import React from 'react';
 import { UniqueIdentifier } from '@dnd-kit/core';
-export interface IDropZoneProps extends PropsWithChildren {
+import { IHaveChildren } from '../types';
+export interface IDropZoneProps extends IHaveChildren {
     zoneId: UniqueIdentifier;
     onAcceptDrop: (id: UniqueIdentifier) => void;
     isAcceptableDrop: boolean;

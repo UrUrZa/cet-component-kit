@@ -1,6 +1,6 @@
-import * as React from 'react';
+import React from 'react';
 interface Props {
     text: string;
 }
-export declare const ExampleComponent: ({ text }: Props) => React.JSX.Element;
-export {};
+declare const ExampleComponent: React.FC<Props>;
+export default ExampleComponent;

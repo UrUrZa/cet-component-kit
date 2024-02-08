@@ -1,4 +1,6 @@
 /// <reference types="react" />
-declare const _default: import("@storybook/types").ComponentAnnotations<import("@storybook/react/dist/types-0fc72a6d").R, import("@storybook/types").Args>;
-export default _default;
-export declare const DropZoneStory: () => import("react").JSX.Element;
+import { Meta } from '@storybook/react';
+import { IDropZoneProps } from '.';
+declare const meta: Meta<IDropZoneProps>;
+export default meta;
+export declare const DropZoneStory: () => JSX.Element;
