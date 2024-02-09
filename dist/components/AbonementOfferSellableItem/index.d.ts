@@ -11,4 +11,5 @@ export interface IAbonementOfferSellableItemProps {
     isMostPopular?: boolean;
     onClick?: () => void;
 }
-export declare const AbonementOfferSellableItem: React.FC<IAbonementOfferSellableItemProps>;
+declare const AbonementOfferSellableItem: React.FC<IAbonementOfferSellableItemProps>;
+export default AbonementOfferSellableItem;

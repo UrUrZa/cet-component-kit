@@ -6,4 +6,5 @@ export interface INumberFieldProps extends CommonElementProps {
     endAdornment?: string;
     placeHolder?: string;
 }
-export declare const NumberField: React.FC<INumberFieldProps>;
+declare const NumberField: React.FC<INumberFieldProps>;
+export default NumberField;

@@ -6,4 +6,5 @@ export interface IDropZoneProps extends IHaveChildren {
     onAcceptDrop: (id: UniqueIdentifier) => void;
     isAcceptableDrop: boolean;
 }
-export declare const DropZone: React.FC<IDropZoneProps>;
+declare const DropZone: React.FC<IDropZoneProps>;
+export default DropZone;

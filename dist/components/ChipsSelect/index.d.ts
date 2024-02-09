@@ -10,4 +10,5 @@ export interface ISelectOption {
     id: id;
     title: string;
 }
-export declare const ChipsSelect: React.FC<IChipsSelectProps>;
+declare const ChipsSelect: React.FC<IChipsSelectProps>;
+export default ChipsSelect;

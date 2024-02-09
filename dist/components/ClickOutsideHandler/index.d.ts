@@ -3,4 +3,5 @@ import { CommonElementProps } from '../types';
 export interface IClickOutsideHandlerProps extends CommonElementProps {
     onClickOutside?: () => void;
 }
-export declare const ClickOutsideHandler: React.FC<IClickOutsideHandlerProps>;
+declare const ClickOutsideHandler: React.FC<IClickOutsideHandlerProps>;
+export default ClickOutsideHandler;

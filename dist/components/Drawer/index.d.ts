@@ -6,4 +6,5 @@ export interface IDrawerProps {
     slideoutDirection: SlideoutDirection;
     isOpen: boolean;
 }
-export declare const Drawer: React.FC<IDrawerProps>;
+declare const Drawer: React.FC<IDrawerProps>;
+export default Drawer;

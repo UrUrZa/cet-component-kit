@@ -10,4 +10,5 @@ export interface IDropDownMenuProps extends CommonElementProps {
 export interface IOption extends IHaveId {
     title: string;
 }
-export declare const DropDownMenu: React.FC<IDropDownMenuProps>;
+declare const DropDownMenu: React.FC<IDropDownMenuProps>;
+export default DropDownMenu;

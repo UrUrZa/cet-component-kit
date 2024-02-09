@@ -7,4 +7,5 @@ export interface ISellableItemsCarouselProps {
     items: ReactNode[];
     onItemChange: (itemIndex: number) => void;
 }
-export declare const SellableItemsCarousel: React.FC<ISellableItemsCarouselProps>;
+declare const SellableItemsCarousel: React.FC<ISellableItemsCarouselProps>;
+export default SellableItemsCarousel;

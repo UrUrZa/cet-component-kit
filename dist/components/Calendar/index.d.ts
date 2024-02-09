@@ -33,4 +33,5 @@ export declare enum FullCalendarView {
     timeGridWeek = "timeGridWeek",
     listWeek = "listWeek"
 }
-export declare const Calendar: React.FC<ICalendarProps>;
+declare const Calendar: React.FC<ICalendarProps>;
+export default Calendar;

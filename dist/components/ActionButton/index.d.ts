@@ -3,4 +3,5 @@ import { CommonElementProps } from '../types';
 export interface IActionButtonProps extends CommonElementProps {
     onClick: () => void;
 }
-export declare const ActionButton: React.FC<IActionButtonProps>;
+declare const ActionButton: React.FC<IActionButtonProps>;
+export default ActionButton;

@@ -8,4 +8,5 @@ export interface IModalProps extends React.HTMLAttributes<HTMLDivElement>, IHave
     onChangeModalMode: (modalMode: ModalMode) => void;
     resizable?: boolean;
 }
-export declare const Modal: React.FC<IModalProps>;
+declare const Modal: React.FC<IModalProps>;
+export default Modal;

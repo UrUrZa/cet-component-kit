@@ -9,4 +9,5 @@ export interface ISelectProps extends CommonElementProps, ISelectOptionsFromBox 
     options: ISelectOption[];
     onChange: (id: id) => void;
 }
-export declare const Select: React.FC<ISelectProps>;
+declare const Select: React.FC<ISelectProps>;
+export default Select;

@@ -3,4 +3,5 @@ import { CommonElementProps } from '../types';
 export interface IWarningMasageProps extends CommonElementProps {
     mesage: string;
 }
-export declare const WarningMasage: React.FC<IWarningMasageProps>;
+declare const WarningMasage: React.FC<IWarningMasageProps>;
+export default WarningMasage;

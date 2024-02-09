@@ -72,4 +72,5 @@ export declare const IconVariant: {
 export declare const activeAvatarStyle: {
     border: string;
 };
-export declare const IconNavButton: React.FC<IIconNavButtonProps>;
+declare const IconNavButton: React.FC<IIconNavButtonProps>;
+export default IconNavButton;

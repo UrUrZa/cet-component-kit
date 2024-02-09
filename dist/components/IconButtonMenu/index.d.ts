@@ -8,4 +8,5 @@ export interface IMenuOption {
     title: string;
     command: () => any;
 }
-export declare const IconButtonMenu: React.FC<IIconButtonMenuProps>;
+declare const IconButtonMenu: React.FC<IIconButtonMenuProps>;
+export default IconButtonMenu;

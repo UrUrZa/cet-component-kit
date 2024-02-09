@@ -6,4 +6,5 @@ export interface IDraggableItemProps extends IHaveChildren {
     onDragStart: (id: UniqueIdentifier) => void;
     onDragEnd: (id: UniqueIdentifier) => void;
 }
-export declare const DraggableItem: React.FC<IDraggableItemProps>;
+declare const DraggableItem: React.FC<IDraggableItemProps>;
+export default DraggableItem;

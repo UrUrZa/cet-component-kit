@@ -7,4 +7,5 @@ export interface ISwipeBoxProps extends BoxProps, CommonElementProps {
     onSwipeUp?: () => void;
     onSwipeDown?: () => void;
 }
-export declare const SwipeBox: React.FC<ISwipeBoxProps>;
+declare const SwipeBox: React.FC<ISwipeBoxProps>;
+export default SwipeBox;

@@ -11,5 +11,6 @@ export declare enum TextFieldType {
     header = "header",
     modalControl = "modalControl"
 }
-export declare const TextField: React.FC<ITextFieldProps>;
+declare const TextField: React.FC<ITextFieldProps>;
 export declare const TextFieldInner: React.FC<ITextFieldProps>;
+export default TextField;

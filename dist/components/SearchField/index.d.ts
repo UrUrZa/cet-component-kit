@@ -12,5 +12,5 @@ export interface ISearchFieldProps extends ISelectSearchProps, React.HTMLAttribu
     onSearch: () => any;
     placeHolder?: string;
 }
-export declare const SearchField: React.FC<ISearchFieldProps>;
-export {};
+declare const SearchField: React.FC<ISearchFieldProps>;
+export default SearchField;

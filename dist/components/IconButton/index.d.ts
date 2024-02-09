@@ -7,4 +7,5 @@ export interface IIconButtonProps extends CommonElementProps {
     onClick: () => void;
     disabled?: boolean;
 }
-export declare const IconButton: React.FC<IIconButtonProps>;
+declare const IconButton: React.FC<IIconButtonProps>;
+export default IconButton;

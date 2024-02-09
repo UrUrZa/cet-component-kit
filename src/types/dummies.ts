@@ -16,7 +16,7 @@ import { oneDay } from "../components/dummies";
 
 export const children = [ 1, 2, 3, 4, 5 ];
 
-export const makeDummieRule = (item: any, index: number): IRule => {
+export const makeDummieRule = ( index: number): IRule => {
   const isOdd = index % 2 === 0;
   return {
     id: `RuleId${index}`,
@@ -31,7 +31,7 @@ export const makeDummieRule = (item: any, index: number): IRule => {
   }
 };
 
-export const makeDummieSubjectView = (item: any, index: number): ISubjectView => {
+export const makeDummieSubjectView = ( index: number): ISubjectView => {
 
   const dummieRules = children.map(makeDummieRule);
   const subjectRules = dummieRules.filter((rule) => rule.subjectId === `SubjectId${index}`);
@@ -45,14 +45,14 @@ export const makeDummieSubjectView = (item: any, index: number): ISubjectView =>
   }
 };
 
-export const makeDummieSubject = (item: any, index: number): ISubject => {
+export const makeDummieSubject = ( index: number): ISubject => {
   return {
-    ...makeDummieSubjectView(item, index),
+    ...makeDummieSubjectView( index),
     rules: ['1', '2', '3'],
   };
 };
 
-export const makeDummieAbonementConsumableView = (item: any, index: number): IAbonementConsumableView => {
+export const makeDummieAbonementConsumableView = ( index: number): IAbonementConsumableView => {
   const isUnlimeited = index % 2 === 0;
   return {
     id: `AbonementId${index}`,
@@ -67,7 +67,7 @@ export const makeDummieAbonementConsumableView = (item: any, index: number): IAb
   }
 };
 
-export const makeDummieStudent = (item: any, index: number): IStudentView => {
+export const makeDummieStudent = ( index: number): IStudentView => {
   return {
     id: `StudentId${index}`,
     name: `Sarah${index}`,
@@ -76,12 +76,12 @@ export const makeDummieStudent = (item: any, index: number): IStudentView => {
   }
 };
 
-export const makeDummieLesson = (item: any, index: number): ILesson => {
+export const makeDummieLesson = ( index: number): ILesson => {
   return {
     id: `LessonId${index}`,
     date: new Date(Date.now() + oneDay * index),
     teacherId: `TeacherId${index}`,
-    subject: makeDummieSubject({}, 0),
+    subject: makeDummieSubject(0),
     ruleId: `RuleId${index}`,
     status: LessonStatus.scheduled,
     participants: [],
@@ -93,15 +93,15 @@ export const makeDummieLesson = (item: any, index: number): ILesson => {
 
 
 
-export const makeDummieAbonementConsumable = (item: any, index: number): IAbonementConsumable => {
-  const abonementOfferView = makeDummieAbonementConsumableView(item, index);
+export const makeDummieAbonementConsumable = ( index: number): IAbonementConsumable => {
+  const abonementOfferView = makeDummieAbonementConsumableView(index);
   return {
     ...abonementOfferView,
     subjects: abonementOfferView.subjects.map((subject) => subject.id),
   };
 };
 
-export const makeDummieAbonementOffer = (item: any, index: number): IAbonementOffer => {
+export const makeDummieAbonementOffer = ( index: number): IAbonementOffer => {
   return {
     id: `AbonementOfferId${index}`,
     price: 100,
@@ -113,7 +113,7 @@ export const makeDummieAbonementOffer = (item: any, index: number): IAbonementOf
   };
 };
 
-export const makeDummieTeacherView = (item: any, index: number): ITeacherView => {
+export const makeDummieTeacherView = ( index: number): ITeacherView => {
   return {
     id: `TeacherId${index}`,
     name: `Teacher${index}`,
@@ -124,8 +124,8 @@ export const makeDummieTeacherView = (item: any, index: number): ITeacherView =>
   }
 }
 
-export const makeDummieTeacher = (item: any, index: number): ITeacher => {
-  const teacherView = makeDummieTeacherView(item, index);
+export const makeDummieTeacher = ( index: number): ITeacher => {
+  const teacherView = makeDummieTeacherView(index);
   return {
     ...teacherView,
     subjects: teacherView.subjects.map((subject) => subject.id),

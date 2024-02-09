@@ -8,4 +8,5 @@ export interface IRectangleProps extends IHaveChildren {
     onClear?: (id: id) => void;
     onDrillDownClick?: (id: id) => void;
 }
-export declare const Rectangle: React.FC<IRectangleProps>;
+declare const Rectangle: React.FC<IRectangleProps>;
+export default Rectangle;

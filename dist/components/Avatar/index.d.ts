@@ -6,4 +6,5 @@ export interface IAvatarProps extends CommonElementProps, AvatarProps {
     size: number;
     onClick: () => void;
 }
-export declare const Avatar: React.FC<IAvatarProps>;
+declare const Avatar: React.FC<IAvatarProps>;
+export default Avatar;

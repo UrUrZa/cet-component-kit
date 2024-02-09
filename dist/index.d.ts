@@ -1,6 +1,6 @@
 import React from 'react';
+export * from './components';
 interface Props {
-    text: string;
 }
 declare const ExampleComponent: React.FC<Props>;
 export default ExampleComponent;

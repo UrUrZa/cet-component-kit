@@ -4,4 +4,5 @@ export interface IWeekDayPikerProps extends CommonElementProps {
     checked: number[];
     onChange: (day: number) => void;
 }
-export declare const WeekDayPiker: React.FC<IWeekDayPikerProps>;
+declare const WeekDayPiker: React.FC<IWeekDayPikerProps>;
+export default WeekDayPiker;

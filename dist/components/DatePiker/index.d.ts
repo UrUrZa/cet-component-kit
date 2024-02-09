@@ -10,4 +10,5 @@ export declare enum DataPikerType {
     DateTime = "DateTime",
     Time = "Time"
 }
-export declare const DatePiker: React.FC<IDatePikerProps>;
+declare const DatePiker: React.FC<IDatePikerProps>;
+export default DatePiker;
