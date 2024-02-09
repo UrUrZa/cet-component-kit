@@ -24,7 +24,7 @@ const StyledBox = styled(Box)`
   justify-content: space-between;
 `;
 
-export const Card: React.FC<ICardProps> = ({children, onClick, ...rest}) => {
+const Card: React.FC<ICardProps> = ({children, onClick, ...rest}) => {
   const [topLeft, topRight, bottomLeft, bottomRight] = children;
   const hasFirstRow = topLeft || topRight;
   const hasSecondRow = bottomLeft || bottomRight;
@@ -52,3 +52,5 @@ export const Card: React.FC<ICardProps> = ({children, onClick, ...rest}) => {
     </StyledCard>
   );
 }
+
+export default Card;

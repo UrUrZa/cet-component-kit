@@ -10,7 +10,7 @@ export interface IDrawerProps {
   isOpen: boolean;
 }
 
-export const Drawer: React.FC<IDrawerProps> = ({children, isOpen, slideoutDirection, comandChilden}) => {
+const Drawer: React.FC<IDrawerProps> = ({children, isOpen, slideoutDirection, comandChilden}) => {
   return (
     <>
       <SwipeableDrawer
@@ -32,3 +32,5 @@ export const Drawer: React.FC<IDrawerProps> = ({children, isOpen, slideoutDirect
     </>
   );
 };
+
+export default Drawer;

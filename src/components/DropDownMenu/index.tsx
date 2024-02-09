@@ -18,7 +18,7 @@ export interface IOption extends IHaveId {
   title: string;
 }
 
-export const DropDownMenu: React.FC<IDropDownMenuProps> = ({title, options, currentOption, onChange,  ...rest}) => {
+const DropDownMenu: React.FC<IDropDownMenuProps> = ({title, options, currentOption, onChange,  ...rest}) => {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
   const handleClick = (event: React.MouseEvent<HTMLElement>) => {
@@ -74,3 +74,5 @@ export const DropDownMenu: React.FC<IDropDownMenuProps> = ({title, options, curr
     </Box>
   );
 }
+
+export default DropDownMenu;

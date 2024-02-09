@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import {IconButton, IIconButtonProps} from '.';
+import IconButton, {IIconButtonProps} from '.';
 import { ButtonType } from '../IconNavButton';
 import React from 'react';
 

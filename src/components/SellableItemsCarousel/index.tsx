@@ -39,7 +39,7 @@ export interface ISellableItemsCarouselProps {
   onItemChange: (itemIndex: number) => void;
 }
 
-export const SellableItemsCarousel: React.FC<ISellableItemsCarouselProps> = ({items, currentItemIndex, onItemChange }) => {
+const SellableItemsCarousel: React.FC<ISellableItemsCarouselProps> = ({items, currentItemIndex, onItemChange }) => {
 
   const swiperRef = useRef(null) as any;
 
@@ -83,3 +83,5 @@ export const SellableItemsCarousel: React.FC<ISellableItemsCarouselProps> = ({it
     </StyledBox>
   );
 };
+
+export default SellableItemsCarousel;

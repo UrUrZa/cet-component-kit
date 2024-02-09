@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { WarningMasage, IWarningMasageProps } from '.';
+import WarningMasage, { IWarningMasageProps } from '.';
 import React from 'react';
 
 const meta: Meta<IWarningMasageProps> = {

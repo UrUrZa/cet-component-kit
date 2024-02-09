@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { WeekDayPiker, IWeekDayPikerProps } from '.';
+import WeekDayPiker, { IWeekDayPikerProps } from '.';
 import { Meta } from '@storybook/react';
 import { toggleArrayValue } from '../../utilities/toggleArrayValue';
 import React from 'react';

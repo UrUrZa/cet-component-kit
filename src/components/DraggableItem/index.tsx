@@ -9,7 +9,7 @@ export interface IDraggableItemProps extends IHaveChildren {
   onDragEnd: (id: UniqueIdentifier) => void;
 }
 
-export const DraggableItem: React.FC<IDraggableItemProps> = ({
+const DraggableItem: React.FC<IDraggableItemProps> = ({
   cardId,
   onDragStart,
   onDragEnd,
@@ -49,3 +49,5 @@ export const DraggableItem: React.FC<IDraggableItemProps> = ({
     </div>   
   );
 };
+
+export default DraggableItem;

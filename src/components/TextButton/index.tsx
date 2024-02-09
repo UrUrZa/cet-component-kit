@@ -6,7 +6,7 @@ export interface ITextButtonProps extends React.HTMLAttributes<HTMLElement> {
     onClick: () => void;
 }
 
-export const TextButton: React.FC<ITextButtonProps> = ({title, children, onClick, ...rest}) => {
+const TextButton: React.FC<ITextButtonProps> = ({title, children, onClick, ...rest}) => {
     return (
         <Button variant='text' {...rest as any} onClick={onClick}>
             {title}
@@ -14,3 +14,5 @@ export const TextButton: React.FC<ITextButtonProps> = ({title, children, onClick
         </Button>
     );
 }
+
+export default TextButton;

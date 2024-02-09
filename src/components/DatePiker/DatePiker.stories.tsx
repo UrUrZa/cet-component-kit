@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
-import { DataPikerType, DatePiker, IDatePikerProps } from '.';
+import DatePiker, { DataPikerType, IDatePikerProps } from '.';
 
 const meta: Meta<IDatePikerProps> = {
     title: 'Component/DatePiker',

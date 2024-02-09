@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
-import { Calendar, FullCalendarView, ICalendarProps } from '.';
+import Calendar, { FullCalendarView, ICalendarProps } from '.';
 import {  
     addDays, 
     subDays

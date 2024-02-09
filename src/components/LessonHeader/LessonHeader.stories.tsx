@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { LessonHeader, ILessonHeaderProps } from '.';
+import LessonHeader, { ILessonHeaderProps } from '.';
 import { LessonStatus } from "../../types/domain";
 import React from 'react';
 

@@ -31,7 +31,7 @@ const MenuProps = {
   },
 };
 
-export const ChipsSelect: React.FC<IChipsSelectProps> = ({options, onChange, selected, ...rest}) => {
+const ChipsSelect: React.FC<IChipsSelectProps> = ({options, onChange, selected, ...rest}) => {
 
   const selectedOptions: ISelectOption[]  = options.filter((option)=>selected.includes(option.id));
   const unselectedOptions: ISelectOption[]  = options.filter((option)=>!(selected.includes(option.id)));
@@ -97,3 +97,5 @@ export const ChipsSelect: React.FC<IChipsSelectProps> = ({options, onChange, sel
     </Box>
   );
 }
+
+export default ChipsSelect;

@@ -1,11 +1,11 @@
 import { Meta } from '@storybook/react';
-import { Modal, IModalProps } from '.';
-import { ButtonType, IconNavButton } from '../IconNavButton';
+import Modal, { IModalProps } from '.';
+import IconNavButton, { ButtonType } from '../IconNavButton';
 import { Box, Button } from '@mui/material';
 import React from 'react';
-import { SwipeBox } from '../SwipeBox';
-import { Select } from '../Select';
-import { NumberField } from '../NumberField';
+import SwipeBox from '../SwipeBox';
+import Select from '../Select';
+import NumberField from '../NumberField';
 import { textL } from '../dummies';
 import { PeriodicityType } from '../../types/domain';
 import { ModalMode } from '../types';

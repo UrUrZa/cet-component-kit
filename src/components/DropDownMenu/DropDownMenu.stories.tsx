@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Meta } from '@storybook/react';
-import { DropDownMenu, IDropDownMenuProps, IOption } from '.';
+import DropDownMenu, { IDropDownMenuProps, IOption } from '.';
 import { id } from "../../types/domain";
 import React from 'react';
 

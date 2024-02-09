@@ -1,9 +1,9 @@
 import { Meta } from '@storybook/react';
-import { DropZone, IDropZoneProps } from '.';
+import DropZone, { IDropZoneProps } from '.';
 import { DndContext } from '@dnd-kit/core';
 import { Box } from '@mui/material';
-import { DraggableItem } from '../DraggableItem';
 import React from 'react';
+import DraggableItem from '../DraggableItem';
 
 const meta: Meta<IDropZoneProps> = {
     title: 'Component/DropZone',

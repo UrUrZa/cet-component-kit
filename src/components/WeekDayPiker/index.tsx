@@ -7,7 +7,7 @@ export interface IWeekDayPikerProps extends CommonElementProps {
   onChange: (day: number) => void;
 }
 
-export const WeekDayPiker: React.FC<IWeekDayPikerProps> = ({checked, onChange, ...rest}) => {
+const WeekDayPiker: React.FC<IWeekDayPikerProps> = ({checked, onChange, ...rest}) => {
   const daysOfWeek = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
   return (
     <ButtonGroup 
@@ -30,3 +30,5 @@ export const WeekDayPiker: React.FC<IWeekDayPikerProps> = ({checked, onChange, .
     </ButtonGroup>
   );
 }
+
+export default WeekDayPiker;

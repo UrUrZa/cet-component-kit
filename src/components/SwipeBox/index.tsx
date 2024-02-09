@@ -15,7 +15,7 @@ export interface ISwipeBoxProps extends BoxProps, CommonElementProps {
     onSwipeDown?: () => void;
 }
 
-export const SwipeBox: React.FC<ISwipeBoxProps> = ({ children, onSwipeLeft, onSwipeRight, onSwipeUp, onSwipeDown, ...rest}) => {
+const SwipeBox: React.FC<ISwipeBoxProps> = ({ children, onSwipeLeft, onSwipeRight, onSwipeUp, onSwipeDown, ...rest}) => {
     const [mouseDown, setMouseDown] = useState<MousePosition | null>(null);
 
     const handlers = useSwipeable({
@@ -80,3 +80,4 @@ const handleMouseDown = (e: MouseEvent<HTMLDivElement>) => {
   );
 }
 
+export default SwipeBox;

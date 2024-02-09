@@ -8,8 +8,10 @@ export interface IAvatarProps extends CommonElementProps, AvatarProps {
     onClick: () => void;
 }
 
-export const Avatar: React.FC<IAvatarProps> = ({image, size, ...rest}) => {
+const Avatar: React.FC<IAvatarProps> = ({image, size, ...rest}) => {
     return (
         <AvatarMUI sx={{ width: size, height: size }} src={image} {...rest} />
     );
 }
+
+export default Avatar;

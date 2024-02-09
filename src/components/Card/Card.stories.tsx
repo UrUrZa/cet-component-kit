@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Card, ICardProps } from '.';
+import Card, { ICardProps } from '.';
 import { Typography } from '@mui/material';
 import React from 'react';
 

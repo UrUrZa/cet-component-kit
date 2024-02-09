@@ -7,7 +7,7 @@ export interface IClickOutsideHandlerProps extends CommonElementProps {
   onClickOutside?: () => void;
 }
 
-export const ClickOutsideHandler: React.FC<IClickOutsideHandlerProps> = ({ children, onClickOutside}) => {
+const ClickOutsideHandler: React.FC<IClickOutsideHandlerProps> = ({ children, onClickOutside}) => {
   const { ref, handleInternalClick } = useClickOutside(onClickOutside);
 
   return (
@@ -16,3 +16,5 @@ export const ClickOutsideHandler: React.FC<IClickOutsideHandlerProps> = ({ child
     </Box>
   );
 };
+
+export default ClickOutsideHandler;

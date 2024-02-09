@@ -19,10 +19,12 @@ export const FooterCard = styled(Card)`
   display: flex;
 `;
 
-export const Footer: React.FC<IFooterProps> = ({children, ...rest}) => {
+const Footer: React.FC<IFooterProps> = ({children, ...rest}) => {
   return (
     <FooterCard {...rest} elevation={3}>
       {children}
     </FooterCard>
   );
 }
+
+export default Footer;

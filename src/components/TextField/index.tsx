@@ -27,7 +27,7 @@ const TextAreaTextField = styled(MuiTextField)`
 `;
 
 
-export const TextField: React.FC<ITextFieldProps> = ({...rest}) => {
+const TextField: React.FC<ITextFieldProps> = ({...rest}) => {
   return (
     <Box 
       height='100%'
@@ -91,3 +91,5 @@ export const TextFieldInner: React.FC<ITextFieldProps> = ({text, type, placeHold
     }
   }
 }
+
+export default TextField;

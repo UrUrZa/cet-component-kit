@@ -3,7 +3,7 @@ import Card from '@mui/material/Card/Card';
 import Typography from '@mui/material/Typography';
 import React from 'react';
 import { IconLesson } from './IconLesson';
-import { IMenuOption, IconButtonMenu } from '../IconButtonMenu';
+import IconButtonMenu, { IMenuOption } from '../IconButtonMenu';
 import { getText } from './lessonHeaderText';
 import { getCollor } from './lessonHeaderCollor';
 import { CommonElementProps } from '../types';
@@ -34,7 +34,7 @@ const LessonHeaderCard = styled(Card)`
   height: ${headerHeight};
 `
 
-export const LessonHeader: React.FC<ILessonHeaderProps> = ({title, type, scheduled, onCancel, ...rest}) => {
+const LessonHeader: React.FC<ILessonHeaderProps> = ({title, type, scheduled, onCancel, ...rest}) => {
   const colorAlert = getCollor(type);
   const canCancel: boolean = ((type === LessonStatus.scheduled) || (type === LessonStatus.commingSoon));
   const text = getText(type, scheduled);
@@ -62,3 +62,5 @@ export const LessonHeader: React.FC<ILessonHeaderProps> = ({title, type, schedul
     </LessonHeaderCard>
   );
 }
+
+export default LessonHeader;

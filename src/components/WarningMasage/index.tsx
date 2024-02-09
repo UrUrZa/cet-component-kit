@@ -7,13 +7,13 @@ export interface IWarningMasageProps extends CommonElementProps {
     mesage: string;
 }
 
-export const WarningMasage: React.FC<IWarningMasageProps> = ({mesage, ...rest}) => {
+const WarningMasage: React.FC<IWarningMasageProps> = ({mesage, ...rest}) => {
     return (
         <Alert
         sx={{alignItems:'center', margin: '0.25rem 0'}}
         color= 'warning'
         icon={<ReportProblemIcon fontSize='large'/>}
-        
+        {...rest}
       >
         <Typography variant='h6'>
           {mesage}
@@ -21,3 +21,5 @@ export const WarningMasage: React.FC<IWarningMasageProps> = ({mesage, ...rest}) 
       </Alert> 
     );
 }
+
+export default WarningMasage;

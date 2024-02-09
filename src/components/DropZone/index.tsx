@@ -8,7 +8,7 @@ export interface IDropZoneProps extends IHaveChildren {
   isAcceptableDrop: boolean;
 }
 
-export const DropZone: React.FC<IDropZoneProps> = ({
+const DropZone: React.FC<IDropZoneProps> = ({
   zoneId,
   onAcceptDrop,
   isAcceptableDrop,
@@ -34,3 +34,5 @@ export const DropZone: React.FC<IDropZoneProps> = ({
     </div>
   );
 };
+
+export default DropZone;

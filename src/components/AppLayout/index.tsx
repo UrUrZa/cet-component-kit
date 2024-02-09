@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import { footerHeight } from "../Footer";
 import { headerHeight } from "../Header";
-import { SwipeBox } from "../SwipeBox";
+import SwipeBox from "../SwipeBox";
 
 export const AppLayoutFull = styled(SwipeBox)`
     position: absolute;

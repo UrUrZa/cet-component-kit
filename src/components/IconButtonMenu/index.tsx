@@ -14,7 +14,7 @@ export interface IMenuOption {
     command: ()=>any;
 }
 
-export const IconButtonMenu: React.FC<IIconButtonMenuProps> = ({options, isFilter, ...rest}) => {
+const IconButtonMenu: React.FC<IIconButtonMenuProps> = ({options, isFilter, ...rest}) => {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
   const handleClick = (event: React.MouseEvent<HTMLElement>) => {
@@ -66,3 +66,4 @@ export const IconButtonMenu: React.FC<IIconButtonMenuProps> = ({options, isFilte
   );
 }
 
+export default IconButtonMenu;

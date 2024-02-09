@@ -1,5 +1,5 @@
 import { Meta } from "@storybook/react";
-import { IModalHeaderProps, ModalHeader } from ".";
+import ModalHeader, { IModalHeaderProps } from ".";
 import React from "react";
 
 const meta: Meta<IModalHeaderProps> = {

@@ -1,12 +1,12 @@
 import { useState } from 'react';
-import { ClickOutsideHandler, IClickOutsideHandlerProps } from '.';
+import ClickOutsideHandler, { IClickOutsideHandlerProps } from '.';
 import { Meta } from '@storybook/react';
 import  Header  from '../Header';
-import { IconButton } from '../IconButton';
 import { ButtonType } from '../IconNavButton';
-import { TextField, TextFieldType } from '../TextField';
+import TextField, { TextFieldType } from '../TextField';
 import { Box, Typography } from '@mui/material';
 import React from 'react';
+import IconButton from '../IconButton';
 
 const meta: Meta<IClickOutsideHandlerProps> = {
   title: 'Component/ClickOutsideHandler',

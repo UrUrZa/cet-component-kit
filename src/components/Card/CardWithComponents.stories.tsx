@@ -1,7 +1,7 @@
 import { Meta } from '@storybook/react';
-import { Card, ICardProps } from '.';
+import Card, { ICardProps } from '.';
 import { Avatar, Box, Typography } from '@mui/material';
-import { IMenuOption, IconButtonMenu } from '../IconButtonMenu';
+import IconButtonMenu, { IMenuOption } from '../IconButtonMenu';
 import React from 'react';
 
 const meta: Meta<ICardProps> = {

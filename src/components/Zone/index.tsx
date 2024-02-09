@@ -8,7 +8,7 @@ export interface IZoneProps extends IHaveChildren {
   isAcceptableNew: boolean;
 }
 
-export const Zone: React.FC<IZoneProps> = ({ children, isAcceptableDrop, isAcceptableNew }) => {
+const Zone: React.FC<IZoneProps> = ({ children, isAcceptableDrop, isAcceptableNew }) => {
   
 
   const StyledBox = styled(Box)`
@@ -41,3 +41,5 @@ export const Zone: React.FC<IZoneProps> = ({ children, isAcceptableDrop, isAccep
     </Paper>
   );
 };
+
+export default Zone;

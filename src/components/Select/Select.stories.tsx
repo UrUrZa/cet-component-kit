@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
-import { Select, ISelectProps } from '.';
+import Select, { ISelectProps } from '.';
 import { id } from "../../types/domain";
 
 const meta: Meta<ISelectProps> = {

@@ -1,9 +1,9 @@
 import { Meta } from '@storybook/react';
-import { ISellableItemsCarouselProps, SellableItemsCarousel } from '.';
+import SellableItemsCarousel, { ISellableItemsCarouselProps } from '.';
 import { Box } from '@mui/system';
 import React, { ReactNode } from 'react';
 import { children, makeDummieAbonementOffer, makeDummieSubjectView } from '../../types/dummies';
-import { AbonementOfferSellableItem } from '../AbonementOfferSellableItem';
+import AbonementOfferSellableItem from '../AbonementOfferSellableItem';
 import { AbonementType } from '../../types/domain';
 
 const meta: Meta<ISellableItemsCarouselProps> = {

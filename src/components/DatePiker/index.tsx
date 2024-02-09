@@ -18,7 +18,7 @@ export enum DataPikerType {
   Time = 'Time'
 }
 
-export const DatePiker: React.FC<IDatePikerProps> = ({type, onChange, currentDate, placeHolder, ...rest}) => {
+const DatePiker: React.FC<IDatePikerProps> = ({type, onChange, currentDate, placeHolder, ...rest}) => {
   const isTimePiker = type === DataPikerType.Time;
   const currentDateValue = currentDate ? dayjs(currentDate) : undefined;
   return (
@@ -53,3 +53,5 @@ export const DatePiker: React.FC<IDatePikerProps> = ({type, onChange, currentDat
     </Box>
   );
 };
+
+export default DatePiker;

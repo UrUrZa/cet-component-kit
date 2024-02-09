@@ -59,7 +59,7 @@ export interface IAbonementOfferSellableItemProps {
   onClick?: () => void;
 }
 
-export const AbonementOfferSellableItem: React.FC<IAbonementOfferSellableItemProps> = ({
+const AbonementOfferSellableItem: React.FC<IAbonementOfferSellableItemProps> = ({
   id,
   limitLessons,
   limitTime,
@@ -112,3 +112,5 @@ export const AbonementOfferSellableItem: React.FC<IAbonementOfferSellableItemPro
     </ItemContainer>
   );
 };
+
+export default AbonementOfferSellableItem;

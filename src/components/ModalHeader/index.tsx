@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "@emotion/styled";
 import { Box } from "@mui/material";
-import { IconButton } from "../IconButton";
+import IconButton from "../IconButton";
 import { TitleStyledTypography } from "../LessonHeader";
 import { ButtonType } from "../IconNavButton";
 
@@ -17,7 +17,7 @@ export interface IModalHeaderProps {
   onClick: () => void;
 }
 
-export const ModalHeader: React.FC <IModalHeaderProps> = ({title, onClick }) => {
+const ModalHeader: React.FC <IModalHeaderProps> = ({title, onClick }) => {
 
   return (
 
@@ -27,3 +27,5 @@ export const ModalHeader: React.FC <IModalHeaderProps> = ({title, onClick }) => 
     </StyledBox>
   );
 }
+
+export default ModalHeader;

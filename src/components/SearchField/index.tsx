@@ -3,7 +3,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { IOption } from '../DropDownMenu';
 import { id } from '../../types/domain';
-import { Select } from '../Select';
+import Select from '../Select';
 
 interface ISelectSearchProps {
   searchOptions?: IOption[];
@@ -46,7 +46,7 @@ const SearchFieldSelect = styled(Select)`
   }
 `;
 
-export const SearchField: React.FC<ISearchFieldProps> = ({text, onChangeSearch, onSearch, placeHolder, searchOptions, currentOption, onOptionChange, ...rest}) => {
+const SearchField: React.FC<ISearchFieldProps> = ({text, onChangeSearch, onSearch, placeHolder, searchOptions, currentOption, onOptionChange, ...rest}) => {
 
   const hasSelectOptions = searchOptions && searchOptions.length > 0;
    return (
@@ -78,3 +78,5 @@ export const SearchField: React.FC<ISearchFieldProps> = ({text, onChangeSearch, 
     </StyledCard>
   );
 }
+
+export default SearchField;

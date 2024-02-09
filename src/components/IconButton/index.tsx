@@ -10,7 +10,7 @@ export interface IIconButtonProps extends CommonElementProps {
     disabled?: boolean;
 }
 
-export const IconButton: React.FC<IIconButtonProps> = ({onClick, type, disabled, ...rest}) => {
+const IconButton: React.FC<IIconButtonProps> = ({onClick, type, disabled, ...rest}) => {
     const Component = IconVariant[type];
 
     const ref = React.useRef<HTMLButtonElement>(null);
@@ -29,3 +29,5 @@ export const IconButton: React.FC<IIconButtonProps> = ({onClick, type, disabled,
         </MUIIconButton>
     );
 }
+
+export default IconButton;

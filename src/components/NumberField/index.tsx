@@ -10,7 +10,7 @@ export interface INumberFieldProps extends CommonElementProps {
     placeHolder?: string;
 }
 
-export const NumberField: React.FC<INumberFieldProps> = ({ onChange, value, endAdornment, placeHolder, ...rest}) => {
+const NumberField: React.FC<INumberFieldProps> = ({ onChange, value, endAdornment, placeHolder, ...rest}) => {
   
   const onChangeHandler = (e: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) => {
     const value = parseInt(e.target.value);
@@ -37,3 +37,5 @@ export const NumberField: React.FC<INumberFieldProps> = ({ onChange, value, endA
     />
   );
 }
+
+export default NumberField;

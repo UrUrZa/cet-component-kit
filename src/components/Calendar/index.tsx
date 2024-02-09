@@ -7,7 +7,7 @@ import listPlugin from '@fullcalendar/list';
 import { ILesson, LessonStatus, LessonsPreviewSource, id } from "../../types/domain";
 import { Box } from '@mui/material';
 import { EventClickArg } from '@fullcalendar/core';
-import { WarningMasage } from '../WarningMasage';
+import WarningMasage  from '../WarningMasage';
 import { lessonToCalendarEventMap } from './lessonToCalendarEventMap';
 import { CommonElementProps } from '../types';
 import { CalendarToolbar } from './CalendarToolbar';
@@ -51,7 +51,7 @@ export enum FullCalendarView {
 
 
 
-export const Calendar: React.FC<ICalendarProps> = ({
+const Calendar: React.FC<ICalendarProps> = ({
   lessons, 
   representationType, 
   onLessonClick, 
@@ -161,3 +161,5 @@ export const Calendar: React.FC<ICalendarProps> = ({
       </Box>
     );
 }
+
+export default Calendar;

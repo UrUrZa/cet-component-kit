@@ -1,6 +1,6 @@
 import { Meta } from '@storybook/react';
-import { Footer, IFooterProps } from '.';
-import { ButtonType, IconNavButton } from '../IconNavButton';
+import Footer, { IFooterProps } from '.';
+import IconNavButton, { ButtonType } from '../IconNavButton';
 import React from 'react';
 
 const meta: Meta<IFooterProps> = {

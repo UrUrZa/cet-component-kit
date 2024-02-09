@@ -13,7 +13,7 @@ export interface IRectangleProps extends IHaveChildren {
   onDrillDownClick?: (id: id) => void;
 }
 
-export const Rectangle: React.FC<IRectangleProps> = ({
+const Rectangle: React.FC<IRectangleProps> = ({
   cardId,
   title,
   color,
@@ -50,3 +50,5 @@ export const Rectangle: React.FC<IRectangleProps> = ({
     </Paper>
   );
 };
+
+export default Rectangle;

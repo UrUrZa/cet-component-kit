@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { AbonementOfferSellableItem, IAbonementOfferSellableItemProps } from '.';
+import AbonementOfferSellableItem, { IAbonementOfferSellableItemProps } from '.';
 import { dummySubjectViews } from '../dummies';
 import React from 'react';
 

@@ -51,7 +51,7 @@ const Puller = styled(DragControl)`
   border-radius: 3;
 `;
 
-export const Modal: React.FC<IModalProps> = ({ children, comandChilden, resizable=false, modalMode, onChangeModalMode, ...rest}) => {
+const Modal: React.FC<IModalProps> = ({ children, comandChilden, resizable=false, modalMode, onChangeModalMode, ...rest}) => {
   const isFillHeight = modalMode === ModalMode.fillHeight;
   const isOpen = modalMode !== ModalMode.closed;
   const canBeBigger = modalMode === ModalMode.halfHeight && resizable;
@@ -76,7 +76,7 @@ export const Modal: React.FC<IModalProps> = ({ children, comandChilden, resizabl
   const drowerHight = isFillHeight ? 100 : 50;
 
   return (
-    <Root>
+    <Root {...rest}>
         <Global
           styles={{
             '.MuiDrawer-root > .MuiPaper-root': {
@@ -119,3 +119,5 @@ export const Modal: React.FC<IModalProps> = ({ children, comandChilden, resizabl
       </Root>
     );
 }
+
+export default Modal;

@@ -2,8 +2,6 @@ import styled from '@emotion/styled';
 import { Card } from '@mui/material';
 import React from 'react';
 import { CommonElementProps, IHaveChildren } from '../types';
-import { J } from '@fullcalendar/core/internal-common';
-import { ReactJSXElement } from '@emotion/react/types/jsx-namespace';
 ;
 
 export interface IHeaderProps extends CommonElementProps, IHaveChildren {}
@@ -28,4 +26,3 @@ const Header: React.FC<IHeaderProps> = ({ children, ...rest }) => {
 };
 
 export default Header;
-

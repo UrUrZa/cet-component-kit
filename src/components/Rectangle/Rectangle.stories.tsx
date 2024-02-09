@@ -1,7 +1,7 @@
 import { Meta } from '@storybook/react';
-import { Rectangle, IRectangleProps } from '.';
+import Rectangle, { IRectangleProps } from '.';
 import { Box } from '@mui/material';
-import { Zone } from '../Zone';
+import Zone from '../Zone';
 import React from 'react';
 
 const meta: Meta<IRectangleProps> = {

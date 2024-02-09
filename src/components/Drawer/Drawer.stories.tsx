@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Meta } from '@storybook/react';
-import { Drawer, IDrawerProps } from '.';
+import Drawer, { IDrawerProps } from '.';
 import { SlideoutDirection } from '../types';
 import { Box, Button } from '@mui/material';
 import React from 'react';

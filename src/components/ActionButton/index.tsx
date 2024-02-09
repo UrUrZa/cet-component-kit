@@ -23,7 +23,7 @@ const ActionButtonContaner =styled(Box)`
     z-index: 1200;
 `;
 
-export const ActionButton: React.FC<IActionButtonProps> = ({onClick, ...rest}) => {
+const ActionButton: React.FC<IActionButtonProps> = ({onClick, ...rest}) => {
     return (
         <ActionButtonContaner 
             {...rest}
@@ -36,3 +36,5 @@ export const ActionButton: React.FC<IActionButtonProps> = ({onClick, ...rest}) =
         </ActionButtonContaner>
     );
 }
+
+export default ActionButton;

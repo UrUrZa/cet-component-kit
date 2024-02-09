@@ -81,7 +81,7 @@ export const IconVariant =
 const activeStyle = {borderBottom:"3px solid #9c27b0"};
 export const activeAvatarStyle = {border:"2px solid #9c27b0",};
 
-export const IconNavButton: React.FC<IIconNavButtonProps> = ({isActive, onClick, type, title, image, ...rest}) => {
+const IconNavButton: React.FC<IIconNavButtonProps> = ({isActive, onClick, type, title, image, ...rest}) => {
   const Component = IconVariant[type];
     return (
         <IconButton
@@ -101,3 +101,5 @@ export const IconNavButton: React.FC<IIconNavButtonProps> = ({isActive, onClick,
         </IconButton>
     );
 }
+
+export default IconNavButton;
